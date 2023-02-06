@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Website Landing Page</title>
+    <link rel="stylesheet" href="txon01.css">
+    
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+           <div class="textBox">
+            <h2>Wake up with<br><span>the King</span></h2>
+            <p>Burger King is an American multinational chain of hamburger fast food restaurants. 
+               Headquartered in Miami-Dade County, Florida, the company was founded in 1953 as Insta-Burger King, a Jacksonville, 
+               Florida–based restaurant chain. After Insta-Burger King ran into financial difficulties in 1954, 
+               its two Miami-based franchisees David Edgerton and James McLamore purchased the company and renamed it “Burger King”.
+            </p>
+            <a href="#">View All Products</a>
+           </div> 
+           <div class="imgBox">
+            <img src="dp.png" class="burger">
+           </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="dp.png" onclick="imgSlider('dp.png');changeBgColor('#FFA326')"></li>
+            <li><img src="dp2.png" onclick="imgSlider('dp2.png');changeBgColor('#e60c2c')"></li>
+            <li><img src="dp3.png" onclick="imgSlider('dp3.png');changeBgColor('#1e1e1e')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="facebook.png"></a></li>
+            <li><a href="#"><img src="twitter.png"></a></li>
+            <li><a href="#"><img src="instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.burger').src=anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background  = color;
+        }
+    </script>
+</body>
+</html>
